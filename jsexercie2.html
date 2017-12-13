@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jsexercise2</title>
+  </head>
+  <body>
+    <button onclick="myFunction()">Try it</button>
+      <button onclick="myFunction1()">Try it</button>
+
+    <p id="push"></p>
+    <p id="unshift"></p>
+    <p id="sort"></p>
+    <p id="pop1"></p>
+    <p id="pop2"></p>
+    <p id="push1"></p>
+    <p id="shift"></p>
+    <p id="shift1"></p>
+    <p id="addfru"></p>
+    <p id="index"></p>
+    <p id="length"></p>
+    <p id="reverse"></p>
+    <p id="max"></p>
+    <p id="min"></p>
+    <script>
+    var num = [4,1,8,3,9,12];;
+    document.getElementById("sort").innerHTML = num;
+
+    function myFunction() {
+        num.sort();
+        document.getElementById("sort").innerHTML = num;
+    }
+    </script>
+    <script>
+    var foods = ["rice","pizza","sandwich","rolls"];
+document.getElementById("pop1").innerHTML = foods;
+foods.pop();
+document.getElementById("pop2").innerHTML = foods;
+foods.push("cake");
+document.getElementById("push1").innerHTML = foods;
+document.getElementById("shift").innerHTML = foods;
+foods.shift();
+document.getElementById("shift1").innerHTML = foods;
+    </script>
+    <script>
+      var fruits = ["Apple","Banana"];
+
+    </script>
+    <script>
+    var fruits = ["Apple"];
+    fruits.unshift("Lemon","Pineapple");
+    document.getElementById("unshift").innerHTML = fruits;
+
+    function myFunction() {
+        fruits.push("Orange","Peach");
+        document.getElementById("push").innerHTML = fruits;
+    }
+    </script>
+    <script>
+    var fruits = ["Apple","orange","woodapple","mango","cherry","lemon","Banana"];
+    document.getElementById("addfru").innerHTML = fruits;
+    document.getElementById("index").innerHTML = fruits[2];
+    document.getElementById("length").innerHTML = fruits.length;
+    function myFunction1() {
+    fruits.reverse();
+    document.getElementById("reverse").innerHTML = fruits;
+}
+    </script>
+<script>
+document.getElementById("min").innerHTML =
+Math.min(0, 150, 30, 20, -8, 200);
+
+document.getElementById("max").innerHTML =
+Math.max(100, 1550, 330, 200, -80, -200);
+</script>
+  </body>
+</html>
